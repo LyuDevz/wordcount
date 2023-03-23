@@ -1,0 +1,49 @@
+<body>
+  <h1>WordCount!</h1>
+  <form action="{% url 'result' %}" method="GET">
+    <textarea name="text" placeholder="글자를 입력해주세요."></textarea>
+    <button type="submit">submit</button>
+  </form>
+</body>
+
+<style>
+  body {
+    text-align: center;
+  }
+  h1 {
+    padding: 20px 0 0 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  textarea {
+    width: 500px;
+    color: #666;
+    line-height: 28px;
+    padding: 10px;
+    border: 1px solid #e4dcd3;
+    border: solid 2px #000;
+    width: 500px;
+    height: 500px;
+    border-radius: 1%;
+    text-align: center;
+    font-size: 15px;
+    outline-color: skyblue;
+  }
+
+  button {
+    color: #fff;
+    background-color: #1e90ff;
+    width: 500px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    z-index: 1;
+    transform: translateY(-15px);
+  }
+</style>
