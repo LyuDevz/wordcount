@@ -3,7 +3,8 @@
   <a href="{% url 'main' %}">메인으로</a>
   <hr />
   <p>
-    {% for word, value in words %} {{word}} count: {{value}} <br />
+    {% for word, value in words %} {{word}} count: {{value}}
+    <br />
     {% endfor %}
   </p>
 </body>
@@ -12,8 +13,7 @@
   body {
     text-align: center;
   }
-  h1 {
-  }
+
   a {
     text-decoration: none;
     color: #7b9acc;
@@ -26,5 +26,7 @@
   }
   p {
     column-count: 4;
+  }
+  p a:hover {
   }
 </style>
