@@ -17,5 +17,4 @@ def result(request):
             text_dict[word] +=1
         else:
             text_dict[word] = 1
-    sort = sorted(text_dict.items(), key=lambda k: k[1], reverse=True)
-    return render(request, 'result.html', {'words':text_dict.items(), 'dict': sort})
+    return render(request, 'result.html', {'words':text_dict.items()})
