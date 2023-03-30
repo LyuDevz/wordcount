@@ -1,6 +1,4 @@
 from django.shortcuts import render
-import re
-import string
 
 def main(request):
     return render(request, 'main.html')
